@@ -1,6 +1,6 @@
 {
-  "name": "epitech-vscode-style",
-  "displayName": "Epitech VSCode Style",
+  "name": "epitech-vs-coding-style",
+  "displayName": "Epitech VS Coding Style",
 "description": "A Visual Studio Code extension that enforces Epitech's coding style guidelines.",
   "version": "0.0.1",
   "engines": {

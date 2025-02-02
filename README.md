@@ -1,71 +1,52 @@
-# epitech-coding-style README
+# Epitech Coding Style Checker
 
-This is the README for your extension "epitech-coding-style". After writing up a brief description, we recommend including the following sections.
+A Visual Studio Code extension that enforces and validates Epitech coding style guidelines for your C projects.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Real-time Analysis:** Automatically runs a Docker-based style check when you save or open a file.
+- **In-Editor Diagnostics:** Displays coding style issues directly in the Problems panel.
+- **Detailed Error Descriptions:** Provides explanations for each coding style violation.
+- **Customizable:** Configure which files to analyze and exclude.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- [Docker](https://www.docker.com/) installed and running.
+- Visual Studio Code version 1.50.0 or later.
+
+## Installation
+
+1. Ensure Docker is installed on your machine.
+2. Install this extension from the VS Code Marketplace or using the Extensions panel.
+3. Reload VS Code and open your project.
+
+## Usage
+
+Once installed, the extension automatically checks your code on file save and file open. Detected issues appear in the Problems panel with detailed descriptions.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension contributes the following settings (adjustable in your `settings.json`):
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `epitechCodingStyle.enable`: Enable or disable the extension.
+* `epitechCodingStyle.exclusions`: Array of file patterns to exclude from style checks.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Performance may be affected on very large projects.
+- Some non-standard project structures may require additional configuration.
 
-## Release Notes
+## Contributing
 
-Users appreciate release notes as you update your extension.
+Contributions are welcome! Please review the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
 
-### 1.0.0
+## License
 
-Initial release of ...
+Distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### 1.0.1
+## More Information
 
-Fixed issue #.
+- [Visual Studio Code API](https://code.visualstudio.com/api)
+- [Docker Documentation](https://docs.docker.com/)
 
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy coding in style!**

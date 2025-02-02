@@ -24,7 +24,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "deploy": "pnpm run compile && vsce package"
   },
   "devDependencies": {
     "@types/vscode": "^1.96.0",

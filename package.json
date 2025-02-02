@@ -1,7 +1,7 @@
 {
-  "name": "epitech-coding-style",
-  "displayName": "Epitech Coding Style",
-  "description": "",
+  "name": "epitech-vscode-style",
+  "displayName": "Epitech VSCode Style",
+"description": "A Visual Studio Code extension that enforces Epitech's coding style guidelines.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -16,12 +16,7 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "epitech-coding-style.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",

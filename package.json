@@ -1,13 +1,33 @@
 {
   "name": "epitech-vs-coding-style",
   "displayName": "Epitech VS Coding Style",
-"description": "A Visual Studio Code extension that enforces Epitech's coding style guidelines.",
+  "description": "Official Visual Studio Code extension for enforcing Epitech's coding style guidelines. Helps students maintain consistent code quality and follow school standards.",
   "version": "0.0.1",
+  "publisher": "epitech",
+  "license": "MIT",
+  "author": {
+    "name": "Maty MILLIEN",
+    "url": "https://github.com/maty-mlln"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maty-mlln/epitech-vs-coding-style"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
-    "Other"
+    "Linters",
+    "Formatters",
+    "Programming Languages",
+    "Education"
+  ],
+  "keywords": [
+    "epitech",
+    "coding-style",
+    "c",
+    "cpp",
+    "formatter"
   ],
   "activationEvents": [
     "onLanguage:c",
@@ -16,16 +36,31 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [],
+    "configuration": {
+      "title": "Epitech Coding Style",
+      "properties": {
+        "epitechCodingStyle.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable Epitech coding style checking"
+        },
+        "epitechCodingStyle.autoFix": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically fix coding style issues on save"
+        }
+      }
+    }
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run compile",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "pnpm run compile && pnpm run lint",
+    "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test",
-    "deploy": "pnpm run compile && vsce package"
+    "deploy": "npm install && npm run compile && vsce package"
   },
   "devDependencies": {
     "@types/vscode": "^1.96.0",
